@@ -58,7 +58,7 @@
       it may not return to the safe branch even if the inlet temperature is reduced, an important operational and safety risk.
     </p>
 
-    <div class="img-row">
+    <div class="images-horizontal" style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
       <img src="/images/chemical/pde_solutions.png" alt="CO concentration and temperature">
       <img src="/images/chemical/scurve.png" alt="Hysteresis Curve">
     </div>
@@ -72,7 +72,7 @@
     <p class="intro-text">
       We solve the optimization problem
       
-      $$\ min_{a} J(a) = -\frac{\mathrm{CO}_{\text{out}}}{\mathrm{CO}_{\text{in}}} \;+\; \gamma \int \max(T(z) - T_{\text{in}}, 0)\, dz, $$ 
+      $$\min_{a} J(a) = -\frac{\mathrm{CO}_{\text{out}}}{\mathrm{CO}_{\text{in}}} \;+\; \gamma \int \max(T(z) - T_{\text{in}}, 0)\, dz, $$ 
 
       balancing high conversion with strict temperature control.
     </p>
@@ -81,6 +81,12 @@
       Our approach combines high-fidelity physics with cutting-edge optimization techniques. We use advanced finite-element PDE solvers and adjoint-based gradients to optimize controls efficiently and reliably, even in high-dimensional design spaces. 
       The result is a solution that is optimal, physically interpretable, robust to uncertainty, and fully aligned with engineering safety limits by staying away from the upper branch.
     </p>
+
+    <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
+    <img src="/images/chemical/workflow.png"
+     alt="PDE-Constrained Optimization Workflow."
+     style="display: block; max-width: 60%; margin: 2rem auto;" />
+    </div>
 
     <p class="intro-text">
       <strong>For clients, this means safer operation, higher yield, larger profit margins, and the ability to explore design and control strategies digitally—before ever touching the physical reactor.</strong>
