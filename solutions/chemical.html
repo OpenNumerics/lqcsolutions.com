@@ -35,11 +35,11 @@
   <div class="panel-content">
     <h2>PDE-Constrained Control of Chemical Reactors</h2>
     <p class="intro-text">Modern chemical reactors are governed by complex physics and chemistry: heat transfer, fluid flow, and reaction kinetics interact across the entire reactor volume in highly nonlinear ways. 
-      These coupled effects determine conversion, yield, selectivity, energy consumption, and overall stability. 
-      Small changes in inlet concentrations, temperatures or catalyst distribution can lead to large variations in output and (financial) yield.</p>
+      These <strong>coupled effects</strong> determine conversion, yield, selectivity, energy consumption, and overall stability. 
+      Small changes in inlet concentrations, temperatures or catalyst distribution can lead to <strong>large variations in output and (financial) yield</strong>.</p>
 
     <p class="intro-text">At the same time, reactors must operate safely. Exothermic reactions can create localized hotspots that damage catalyst beds, shorten reactor lifetime, or trigger runaway reactions. 
-      Balancing maximum performance with safe operating conditions is a challenging engineering problem, but one where we can help!
+      <strong>Balancing maximum performance with safe operating conditions is a challenging engineering problem, but one where we can help!</strong>
     </p>
 
     <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
@@ -53,7 +53,7 @@
       On the left, a fixed mixture of CO and O₂ enters the reactor at a specified inlet temperature $T_{\text{in}}$. 
       As the gas travels through the catalyzed region, CO is gradually converted into O₂. 
       The objective is to minimize the CO concentration at the outlet. Increasing the inlet temperature accelerates the reaction and improves conversion. 
-      However, beyond a critical threshold, the system exhibits thermal runaway: the reaction releases heat, the temperature rises, which accelerates the reaction even further, leading to a sharp temperature spike. 
+      However, beyond a critical threshold, the <strong>system exhibits thermal runaway</strong>: the reaction releases heat, the temperature rises, which accelerates the reaction even further, leading to a sharp temperature spike. 
       The second image shows this temperature spike. The transition is abrupt and displays hysteresis, meaning that once the reactor enters the high-temperature regime, 
       it may not return to the safe branch even if the inlet temperature is reduced, an important operational and safety risk.
     </p>
@@ -63,10 +63,10 @@
       <img src="/images/chemical/scurve.png" alt="Hysteresis Curve">
     </div>
 
-    <p class="intro-text">At Open Numerics, we built a controller that maximizes CO conversion while keeping the reactor safely away from runaway conditions. 
+    <p class="intro-text">At Open Numerics, <strong>we built a custom controller that maximizes CO conversion while keeping the reactor safely away from runaway conditions</strong>. 
       Our control input is the catalyst concentration $a(z)$, which determines how rapidly the reaction proceeds along the reactor. 
       The reactor's temperature and species profiles are governed by first-principles PDEs describing transport, heat release, and reaction kinetics. 
-      These physics-based equations serve as constraints in the optimization, ensuring that every proposed solution respects the true thermochemical behavior of the system.
+      These <strong>physics-based equations serve as constraints in the optimization</strong>, ensuring that every proposed solution respects the true thermochemical behavior of the system.
     </p>
 
     <p class="intro-text">
@@ -78,7 +78,7 @@
     </p>
 
     <p class="intro-text">
-      Our approach combines high-fidelity physics with cutting-edge optimization techniques. We use advanced finite-element PDE solvers and adjoint-based gradients to optimize controls efficiently and reliably, even in high-dimensional design spaces. 
+      <strong>Our approach combines high-fidelity physics with cutting-edge optimization techniques.</strong> We use advanced finite-element PDE solvers and adjoint-based gradients to optimize controls efficiently and reliably, even in high-dimensional design spaces. 
       The result is a solution that is optimal, physically interpretable, robust to uncertainty, and fully aligned with engineering safety limits by staying away from the upper branch.
     </p>
 
