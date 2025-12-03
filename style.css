@@ -528,7 +528,7 @@ a {
 }
 
 .img-row img {
-  width: 300px;           /* or 50%, or any value you like */
+  width: 500px;           /* or 50%, or any value you like */
   height: auto;           /* keep aspect ratio */
   object-fit: cover;      /* crop if aspect ratios differ */
 }
