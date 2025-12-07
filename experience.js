@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/pycont.png"
     },
     {
-      title: "Enhanced Sampling for Protein Folding",
+      title: "Enhanced Sampling for Molecular Dynamics",
       link: "/solutions/sampling.html",
-      description: "New multifidelity sampling algorithm for improved protein structure predition",
+      description: "New multifidelity sampling algorithm for improved molecular structure predition",
       image: "images/alanine_dipeptide.png"
     },
     {
